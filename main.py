@@ -25,3 +25,15 @@ print("Minimum number using recursion is", recursion.computeMin(nums, 0, nums[0]
 str = 'CAT'
 loops.reverse(str)
 recursion.reverse(str, len(str))
+
+
+numbers = -7, 42, 70, 39, 3, 63, 8
+startingindex = 0
+listsize = 7
+target= 39
+
+numbers = input('Enter seven numbers separated by a space')
+startingindex = input('Enter index at which the search will begin')
+listsize = input('Enter size of list that will be searched')
+target = input('Enter the target value to search for')
+print(recursion.search(numbers, startingindex, listsize, target, 0, False))
